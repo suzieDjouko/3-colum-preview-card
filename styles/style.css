@@ -1,0 +1,176 @@
+@import url("reset.css");
+
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+
+/*Primary*/
+    --Bright_orange: hsl(31, 77%, 52%);
+    --Dark_cyan: hsl(184, 100%, 22%);
+    --Very_dark_cyan: hsl(179, 100%, 13%);
+/*Secoondary*/
+    --Transparent_white_paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very_light_gray_background_headings_buttons: hsl(0, 0%, 95%);
+
+}
+body{
+    font-size: 15px;
+    background-color: var(--Very_light_gray_background_headings_buttons);
+    
+}
+.icon{
+    padding: 12px 0px;
+}
+
+h2{
+    text-transform: uppercase;
+    font-family: Big Shoulders Display;
+    font-weight: 700;
+    color: var(--Very_light_gray_background_headings_buttons);
+    font-size: 32px;
+    margin: 18px 0;
+
+}
+p{
+    color: var(--Transparent_white_paragraphs);
+    font-family:Lexend Deca;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    word-spacing: 1px;
+
+}
+
+
+.container{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 32px;
+
+
+}
+.container_content{
+    width: 300px;  
+  
+}
+.sedan_content{
+    align-items: center;
+    display: inline-block;
+    background-color: var(--Bright_orange);
+    padding: 45px 40px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    margin: 0 12px;
+
+}
+
+.suvs_content{
+    display: inline-block;
+    background-color: var(--Dark_cyan);
+    padding: 45px 40px;
+    margin: 0 12px;
+
+}
+
+.luxury_content{
+    display: inline-block;
+    background-color: var(--Very_dark_cyan);
+    padding: 45px 41px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    margin: 0 12px;
+
+}
+
+button{
+    margin-top : 24px;
+    border: 2px solid var(--Very_light_gray_background_headings_buttons);
+    padding: 14px 28px;
+    border-radius: 24px;
+    font-family: Lexend Deca;
+    font-size: 12px;
+    cursor: pointer;
+   
+    
+}
+
+.button:hover{
+    background-color: transparent;
+    color: var(--Very_light_gray_background_headings_buttons);
+
+}
+
+
+.luxury_content_button{
+    color: var(--Very_dark_cyan);
+}
+
+.suvs_content_button{
+    color: var(--Dark_cyan);
+
+}
+
+.sedan_content_button{
+    color: var(--Bright_orange);
+}
+
+.attribution {
+   
+    margin-top: 40px;
+   
+}
+
+@media screen and  (min-width: 600px){
+    
+    body{
+        height: 100vh;
+
+    }
+    .container_content{
+        display: flex;
+        flex-direction: row;
+        width: 750px;
+    
+    }
+    .sedan_content{
+        margin: 0;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+    }
+    .suvs_content{
+        margin: 0;
+    }
+    .luxury_content{
+        margin: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    p{
+        text-align: left;
+    }
+
+    button{
+        margin-top: 60px;
+        padding: 10px 24px;
+    }
+
+    .attribution {
+        position: absolute;
+        margin: 18px 0;
+        bottom: 25px;
+    }
+    
+
+    
+}
